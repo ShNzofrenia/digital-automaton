@@ -1,0 +1,27 @@
+﻿<Window x:Name="win" x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Банкомат" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="46" Width="121" FontSize="24"/>
+        <Button x:Name="bb1" Content="Снять средства" HorizontalAlignment="Left" Margin="49,194,0,0" VerticalAlignment="Top" Height="78" Width="254" FontSize="20" Click="bb1_Click"/>
+        <Button x:Name="bb2" Content="Положить средства" HorizontalAlignment="Left" Margin="486,194,0,0" VerticalAlignment="Top" Height="78" Width="254" FontSize="20" Click="bb2_Click"/>
+        <TextBox x:Name="bal" HorizontalAlignment="Left" Height="45" Margin="235,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="541" FontSize="24" Text="10000" TextChanged="bal_TextChanged"/>
+        <Label x:Name="lb4" Content="Ваш балланс:" HorizontalAlignment="Left" Height="45" Margin="49,108,0,0" VerticalAlignment="Top" Width="192" FontSize="20"/>
+        <Label x:Name="lb1" Content="Сколько вы хотите снять:" HorizontalAlignment="Left" Height="42" Margin="49,285,0,0" VerticalAlignment="Top" Width="200" FontSize="16"/>
+        <TextBox x:Name="bal2" HorizontalAlignment="Left" Height="42" Margin="254,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" FontSize="16" TextChanged="bal2_TextChanged"/>
+        <Button x:Name="bb3" Content="Снять" HorizontalAlignment="Left" Height="41" Margin="49,353,0,0" VerticalAlignment="Top" Width="286" FontSize="22" Click="bb3_Click"/>
+        <Label x:Name="lb2" Content="Сколько вы хотите внести:" HorizontalAlignment="Left" Height="42" Margin="454,285,0,0" VerticalAlignment="Top" Width="200" FontSize="16"/>
+        <TextBox x:Name="bal3" HorizontalAlignment="Left" Height="42" Margin="659,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" FontSize="16" TextChanged="bal3_TextChanged"/>
+        <Button x:Name="bb4" Content="Внести" HorizontalAlignment="Left" Height="41" Margin="454,353,0,0" VerticalAlignment="Top" Width="286" FontSize="22" Click="bb4_Click"/>
+        <Button x:Name="bb5" Content="Повторить операцию" HorizontalAlignment="Left" Height="31" Margin="49,158,0,0" VerticalAlignment="Top" Width="376" Click="bb5_Click"/>
+        <Button x:Name="bb6" Content="Забрать карту" HorizontalAlignment="Left" Height="46" Margin="613,10,0,0" VerticalAlignment="Top" Width="163" Click="bb6_Click"/>
+        <Label x:Name="lb5" Content="Заберите свою карту" HorizontalAlignment="Left" Height="46" Margin="308,210,0,0" VerticalAlignment="Top" Width="209" FontSize="20"/>
+        <Button x:Name="bb7" Content="Выход" HorizontalAlignment="Left" Height="47" Margin="8,10,0,0" VerticalAlignment="Top" Width="241" FontSize="20" Click="bb7_Click"/>
+
+    </Grid>
+</Window>
